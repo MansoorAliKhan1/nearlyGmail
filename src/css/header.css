@@ -1,0 +1,48 @@
+.header {
+    display: grid;
+    grid-template-columns: 250px auto 200px;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+.left_header {
+    display: flex;
+    align-items: center;
+}
+
+.middle_header {
+    display: flex;
+    flex: 0.7;
+}
+
+.search_mail {
+    border-radius: 25px;
+    display: flex;
+    flex: 0.7;
+    background-color: #eaf1fb;
+}
+
+.middle_header input {
+    border: 0;
+    background: transparent;
+    outline: 0;
+    flex: 1;
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+}
+
+.middle_header input::placeholder {
+    color: rgb(62, 62, 62);
+  }
+
+.right_header {
+    display: flex;
+    align-items: center;
+}
+
+.right_header .MuiAvatar-root {
+    height: 35px;
+    width: 35px;
+}

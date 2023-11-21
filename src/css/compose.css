@@ -1,0 +1,284 @@
+.compose {
+    position:absolute;
+    bottom: 0;
+    right:70px;
+    min-width: 550px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgb(51 51 51/59%);
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* .composeexpanded{
+    position:absolute;
+    bottom: 0;
+    right:70px;
+    min-width: 900px;
+    min-height: 700px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgb(51 51 51/59%);
+    background-color: #fff;
+    transition: all 0.3s ease;
+} */
+
+.compose .compose__header {
+    display: flex;
+    justify-content: space-between;
+    background: #eaf1fb;
+    color: black;
+    align-items: center;
+    padding: 7px 15px;
+}
+
+
+
+.compose__header__left span {
+    font-size: 14px;
+}
+
+.compose__header__right {
+    display: flex;
+    align-items: center;
+}
+
+.compose__header__left {
+    display: flex;
+    align-items: center;
+}
+
+.compose .compose__header .compose__header__right svg {
+    font-size: 18px;
+    margin-left: 10px;
+    transition: 0.2s linear 0s;
+    padding: 3px;
+}
+
+.compose__header__right svg:nth-child(2) path {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.compose .compose__header .compose__header__right svg:hover {
+    background: #a1a1a1;
+    cursor: pointer;
+}
+
+.compose__body{
+    /* display: flex; */
+    max-width: 560px;
+}
+
+.compose__bodyForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.compose__bodyForm input, textarea {
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    border: 0px;
+    box-shadow: inset 0 -1px 0 0 rgb(100 121 143/12%);
+    padding: 3px;
+    padding-left: 15px;
+}
+
+.compose__bodyForm textarea {
+    height: auto;
+}
+
+.compose__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10px;
+}
+
+.compose__footerLeft {
+    display: flex;
+}
+
+
+.compose__footerLeft button {
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+    border: 0;
+    background-color: #0b57d0;
+    outline: 0;
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 0px 0px 15px !important;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+}
+
+.compose__footerLeft button svg {
+    border-left: 1px solid #00000052;
+    margin-left: 15px;
+    padding: 6px 2px 6px 2px;
+}
+
+.compose__footerRight svg {
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    color: gray;
+    padding: 3px;
+    transition: 0.3 linear 0s;
+    cursor: pointer;
+}
+
+.compose__footerRight svg:hover {
+    background-color: #eee;
+    color:#000;
+}
+
+
+
+.composeexpanded {
+    position: absolute;
+    bottom: 0;
+    min-width: 1150px;
+    min-height: 630px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    box-shadow: 0px 0px 8px rgb(51 51 51/59%);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    transition: all 0.3s ease;
+}
+
+.composeexpanded .compose__header {
+    display: flex;
+    justify-content: space-between;
+    background: #eaf1fb;
+    color: black;
+    align-items: center;
+    padding: 7px 15px;
+}
+
+.composeexpanded .compose__header .compose__header__right svg {
+    color: black;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: 0.2s linear 0s;
+    padding: 3px;
+}
+
+.composeexpanded .compose__body {
+    max-width: none;
+}
+
+.composeexpanded .compose__bodyForm input,
+.composeexpanded .compose__bodyForm textarea {
+    width: 100%;
+    background-color: #fff;
+}
+
+/* .composeexpanded .compose__bodyForm textarea { */
+    /* margin-bottom: 130px; */
+    /* height: 50vh; */
+/* } */
+
+.composeexpanded .compose__footerLeft button {
+    background-color: #0b57d0;
+    color: #fff;
+}
+
+.composeexpanded .compose__footerRight svg {
+    color: gray;
+}
+
+.composeexpanded .compose__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+.compose__header {
+    display: flex;
+    justify-content: space-between;
+    background: #eaf1fb;
+    color: black;
+    align-items: center;
+    padding: 7px 15px;
+    margin: 0;
+}
+
+
+.compose__header__right__expanded{
+    display: flex;
+    align-items: center;
+}
+
+.compose__header__right__expanded svg{
+    font-size: 18px;
+    margin-left: 10px;
+    transition: 0.2s linear 0s;
+    padding: 3px;
+}
+
+.compose__header__right__expanded svg:nth-child(2) path {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.compose__header__right__expanded svg:hover {
+    background: #a1a1a1;
+    cursor: pointer;
+}
+
+.compose__body__expanded{
+    /* display: flex; */
+    max-width: 1170px;
+}
+
+.compose__bodyForm__expanded {
+    display: flex;
+    flex-direction: column;
+}
+
+.compose__bodyForm__expanded input, textarea {
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    border: 0px;
+    box-shadow: inset 0 -1px 0 0 rgb(100 121 143/12%);
+    padding: 3px;
+    padding-left: 15px;
+}
+
+.compose__bodyForm__expanded textarea {
+    height: auto;
+}
+
+.format-bar-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgb(51 51 51/59%);
+    margin-left: 30px;
+    margin-right: 30px;
+    /* margin-top: -5px; */
+    margin-bottom: -5px;
+    max-height: 36px;
+    max-width: 500px;
+
+}
+/* 
+.format-bar-icons svg {
+    font-size: 22px;
+    color: #444;
+    display: flex;
+} */
