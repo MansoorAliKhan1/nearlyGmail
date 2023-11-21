@@ -70,21 +70,21 @@ function Sidebar({selectedPage}){
                 console.log('sidedispatch',dispatch(openSendMessage()));}}>
             <span className="capitalize-first-letter" style={{fontWeight: 'normal', color:'black'}}>Compose</span>
             </Button>
-            <Sidebaroptions Icon={InboxIcon} title="Inbox" number={224} isactive={selectedPage === 'Inbox'} onClick={() => {
+            <Sidebaroptions Icon={InboxIcon} title="Inbox" number={134} isactive={selectedPage === 'Inbox'} onClick={() => {
                 handleOptionClick('Inbox');
                 navigate('/')}} />
-            <Sidebaroptions Icon={StarBorderIcon} title="Starred" number={500} isactive={selectedPage === 'Starred'} onClick={() => {
+            <Sidebaroptions Icon={StarBorderIcon} title="Starred" number={40} isactive={selectedPage === 'Starred'} onClick={() => {
                 handleOptionClick('Starred');
                 if(selectedPage !== 'Starred'){
                     navigate('/starred');
                 }}} />
-            <Sidebaroptions Icon={AccessTimeIcon} title="Snoozed" number={300} isactive={selectedPage === 'Snoozed'} onClick={() => {
+            <Sidebaroptions Icon={AccessTimeIcon} title="Snoozed" number={3} isactive={selectedPage === 'Snoozed'} onClick={() => {
                 handleOptionClick('Snoozed');
                 if(selectedPage !== 'Snoozed'){
                     navigate('/snoozed');
                 }
                 }} />
-            <Sidebaroptions Icon={InsertDriveFileOutlined} title="Drafts" number={452}  isactive={selectedPage === 'Drafts'} onClick={() => {
+            <Sidebaroptions Icon={InsertDriveFileOutlined} title="Drafts" number={52}  isactive={selectedPage === 'Drafts'} onClick={() => {
                 handleOptionClick('Drafts');
                 if(selectedPage !== 'Drafts'){
                     navigate('/drafts');
@@ -92,13 +92,13 @@ function Sidebar({selectedPage}){
             <span onClick={toggleMoreOptions} ><Sidebaroptions Icon={ExpandMoreIcon} title={showToggleOption} number={254} /></span>
             {showMoreOptions && (
                 <div>
-            <Sidebaroptions Icon={LabelImportantOutlinedIcon} title="Important" number={10} isactive={selectedPage === 'Important'} onClick={() => {
+            <Sidebaroptions Icon={LabelImportantOutlinedIcon} title="Important" number={12} isactive={selectedPage === 'Important'} onClick={() => {
                 handleOptionClick('Important');
                 if(selectedPage !== 'Important'){
                     navigate('/important');
                 }
                 }} />
-            <Sidebaroptions Icon={ChatOutlinedIcon} title="Chats" number={10}  isactive={false} onClick={() => handleOptionClick('Chats')} />
+            <Sidebaroptions Icon={ChatOutlinedIcon} title="Chats" number={13}  isactive={false} onClick={() => handleOptionClick('Chats')} />
             <Sidebaroptions Icon={SendIcon} title="Sent" number={254} isactive={selectedPage === 'Sent'} onClick={() => {
                 handleOptionClick('Sent');
                 if(selectedPage !== 'Sent'){
@@ -113,9 +113,9 @@ function Sidebar({selectedPage}){
                 if(selectedPage!=='Bin'){
                     navigate('/bin');
                 }}} />           
-            <Sidebaroptions Icon={LabelOutlinedIcon} title="Categories" number={254} isactive={false} onClick={() => handleOptionClick('Categories')} />
-            <Sidebaroptions Icon={SettingsOutlinedIcon} title="Manage Labels" number={254} isactive={false} onClick={() => handleOptionClick('Manage Labels')} />
-            <Sidebaroptions Icon={AddIcon} title="Create new Label" number={254} isactive={activeOption === false} onClick={() => handleOptionClick('Create new Label')} />
+            <Sidebaroptions Icon={LabelOutlinedIcon} title="Categories" number={221} isactive={false} onClick={() => handleOptionClick('Categories')} />
+            <Sidebaroptions Icon={SettingsOutlinedIcon} title="Manage Labels" number={125} isactive={false} onClick={() => handleOptionClick('Manage Labels')} />
+            <Sidebaroptions Icon={AddIcon} title="Create new Label" number={215} isactive={activeOption === false} onClick={() => handleOptionClick('Create new Label')} />
             </div>
             )}
             <hr />
