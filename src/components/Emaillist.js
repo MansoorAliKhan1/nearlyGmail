@@ -127,6 +127,8 @@ function Emaillist({page}) {
     <div className={`emaillist${!show ? 'hide' : ''}`}>
         <EmailListSetting />
         {page==="Inbox" && <Emailtype page={page} />}
+        {page==="Social" && <Emailtype page={page} />}
+        {page==="Promotions" && <Emailtype page={page} />}
         {   (page==="Inbox") &&
             emails?.map(({ id, data })=>{
                 if (data.from === user.email){
