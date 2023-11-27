@@ -18,6 +18,8 @@ import DraftsPage from './pages/DraftsPage';
 import ImportantPage from './pages/ImportantPage';
 import SentPage from './pages/SentPage';
 import BinPage from './pages/BinPage';
+import SocialPage from './pages/SocialPage';
+import PromotionsPage from './pages/PromotionsPage';
 
 
 
@@ -65,6 +67,8 @@ function App() {
         <Route path="/important" element={<ImportantPage/>}/>
         <Route path="/sent" element={<SentPage/>}/>
         <Route path="/bin" element={<BinPage/>}/>
+        <Route path="/social" element={<SocialPage/>}/>
+        <Route path="/promotions" element={<PromotionsPage/>}/>
       </Routes>
     </Router>
   );

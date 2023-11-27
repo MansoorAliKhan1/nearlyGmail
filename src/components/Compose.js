@@ -159,7 +159,7 @@ function Compose() {
             <Dialog
                 open={true}
                 onClose={handleClose}
-                maxWidth="lg" // Adjust the size as needed
+                maxWidth="md" // Adjust the size as needed
                 fullWidth
                 sx={{
                     '& .MuiDialogTitle-root': {

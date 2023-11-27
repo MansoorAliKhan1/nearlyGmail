@@ -126,7 +126,7 @@ function Emaillist({page}) {
   return (
     <div className={`emaillist${!show ? 'hide' : ''}`}>
         <EmailListSetting />
-        <Emailtype />
+        {page==="Inbox" && <Emailtype page={page} />}
         {   (page==="Inbox") &&
             emails?.map(({ id, data })=>{
                 if (data.from === user.email){
@@ -199,8 +199,8 @@ function Emaillist({page}) {
                 );
             })
         }
-        {/* {
-            page==='Drafts' &&
+        {
+            page==='Social' &&
             Draftmails?.map((data)=>{
                 return (
                     <Emailbody 
@@ -215,10 +215,27 @@ function Emaillist({page}) {
                     />
                 );
             })
-        } */}
+        }
         {
             page==='Important' &&
             Importantmails?.map((data)=>{
+                return (
+                    <Emailbody 
+                    name={data.fromName}
+                    email={data.from}
+                    key={(1000+ Math.random() + Math.random()).toString(36)}
+                    subject={data.subject}
+                    message={data.message}
+                    time={data.timestamp}
+                    page={page}
+                    to={data.to}
+                    />
+                );
+            })
+        }
+        {
+            page==='Promotions' &&
+            Snoozedmails?.map((data)=>{
                 return (
                     <Emailbody 
                     name={data.fromName}

@@ -1,14 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import InboxIcon from '@mui/icons-material/Inbox';
 import PeopleIcon from '@mui/icons-material/People';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import '../css/emaillist.css';
+import { useNavigate } from 'react-router-dom';
+function Emailtype({page}) {
+  const [activeOption, setActiveOption] = useState('');
+  const navigate=useNavigate();
 
-function Emailtype() {
-  const [activeOption, setActiveOption] = useState('Primary');
+  useEffect(()=>{
+    if (page==='Inbox'){
+      setActiveOption('Primary');
+    }
+    else{
+      setActiveOption(page);
+    }
+  },[activeOption,page]);
 
   const handleOptionClick = (option) => {
-    setActiveOption(option);
+    // setActiveOption(option);
+    console.log('option',option);
+    if (page!=='Social' && option==='Social'){
+      navigate('/social');
+    }
+    else if (page!=='Inbox' && option==='Primary'){
+      navigate('/');
+    }
+    else if (page!=='Promotions' && option==='Promotions'){
+      navigate('/promotions');
+    }
+    console.log('active',activeOption);
   };
   return (
     <div className='emailtype'>

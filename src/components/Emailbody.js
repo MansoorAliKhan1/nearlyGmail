@@ -212,6 +212,8 @@ function Emailbody({name,email,subject,message,time, page, to}) {
             {page==="Inbox" && <h4 onClick={setMail}>{name}</h4>}
             {page==="Important" && <h4 onClick={setMail}>{name}</h4>}
             {page==="Bin" && <h4 onClick={setMail}>{name}</h4>}
+            {page==="Social" && <h4 onClick={setMail}>{name}</h4>}
+            {page==="Promotions" && <h4 onClick={setMail}>{name}</h4>}
             {page==="Sent" && (<><p style={{fontSize: '14px'}} onClick={setMail}>To: {to}</p></>)}
             {page==="Drafts" && (<p style={{fontSize:'15px', color: '#b3261e'}}>Draft</p>)}
         </div>
